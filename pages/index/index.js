@@ -3,7 +3,11 @@
   Page({
     data: {
       //轮播图数组
-      swiperList:[]
+      swiperList:[],
+      //导航 数组
+      catesList:[],
+      // 楼层数据
+      floorList:[],
     },
     //options(Object)
     //页面开始加载就会触发
@@ -20,13 +24,37 @@
     //       this.setData({
     //         swiperList:result.data.message
     //       })
-          request({url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'})
-          .then(result=>{
-            this.setData({
-              swiperList:result.data.message
-          })
-        })
+          this.getSwiperList();
+          this.getcatesList();
+          this.getfloorList();
+
       
+    },
+    //获取轮播图数据
+    getSwiperList(){
+      request({url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'})
+      .then(result=>{
+        this.setData({
+          swiperList:result.data.message
+      })
+    })
+    },
+    //获取导航栏数据
+    getcatesList(){
+      request({url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/catitems'})
+      .then(result=>{
+        this.setData({
+          catesList:result.data.message
+      })
+    })
+    },
+    getfloorList(){
+      request({url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/floordata'})
+      .then(result=>{
+        this.setData({
+          floorList:result.data.message
+      })
+    })
     },
     onReady: function(){
       
