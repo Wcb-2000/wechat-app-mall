@@ -32,7 +32,7 @@
 }
 .index_floor .floor_group .floor_list navigator:nth-last-child(-n+4) {
   /* 原图的宽高 232 *386 */
-  height: 12865.38vw / 232 / 2;
+  height: 27.7271vw;
   border-left: 10rpx solid #fff;
 }
 .index_floor .floor_group .floor_list navigator:nth-child(2),
