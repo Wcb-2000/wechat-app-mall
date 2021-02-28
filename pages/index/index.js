@@ -8,6 +8,7 @@
       catesList:[],
       // 楼层数据
       floorList:[],
+      
     },
     //options(Object)
     //页面开始加载就会触发
@@ -25,7 +26,7 @@
     //         swiperList:result.data.message
     //       })
           this.getSwiperList();
-          this.getcatesList();
+          this.getcatesList(); 
           this.getfloorList();
 
       
