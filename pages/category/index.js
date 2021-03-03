@@ -40,7 +40,7 @@ Page({
     this.getCates();
   }else{
     //有旧数据  定义过期时间 10s
-    if(Date.now() - Cates.time > 1000*10){
+    if(Date.now() - Cates.time > 1000*100){
       //重新发送请求
       this.getCates();
     }else{
