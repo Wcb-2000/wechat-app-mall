@@ -1,2 +1,3 @@
-<!--pages/goods_list/index.wxml-->
-<text>pages/goods_list/index.wxml</text>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <Searchinput></Searchinput>
+</view>
