@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "Searchinput":"../../components/Searchinput/Searchinput"
+  },
+  "navigationBarTitleText": "商品信息"
 }
